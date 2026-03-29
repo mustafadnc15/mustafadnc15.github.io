@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Delete Your Account — Life Coach AI</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #F9F5FF;
+            color: #4A3D6B;
+            line-height: 1.7;
+            padding: 24px 16px 64px;
+        }
+        .container { max-width: 720px; margin: 0 auto; }
+        h1 { font-size: 28px; color: #8B7BAF; margin-bottom: 4px; }
+        .subtitle { font-size: 14px; color: #8B7BAF; margin-bottom: 32px; }
+        h2 {
+            font-size: 20px; color: #8B7BAF;
+            margin-top: 32px; margin-bottom: 12px;
+            padding-bottom: 6px; border-bottom: 2px solid #e4ddf2;
+        }
+        p { margin-bottom: 12px; font-size: 15px; }
+        ol { margin: 8px 0 16px 24px; font-size: 15px; }
+        li { margin-bottom: 10px; }
+        strong { color: #4A3D6B; }
+        a { color: #8B7BAF; text-decoration: underline; }
+        .info-box {
+            background-color: #F0EAFF;
+            border-left: 4px solid #8B7BAF;
+            padding: 16px 20px;
+            border-radius: 6px;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        .warning-box {
+            background-color: #FFF0F0;
+            border-left: 4px solid #D46A6A;
+            padding: 16px 20px;
+            border-radius: 6px;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        .warning-box strong { color: #B04040; }
+        .step-number {
+            display: inline-block;
+            width: 28px; height: 28px;
+            background: #8B7BAF;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: #9a8fbf;
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 2px solid #E8E0F0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Delete Your Account</h1>
+        <p class="subtitle">Life Coach AI by Spry</p>
+
+        <h2>What Gets Deleted</h2>
+        <p>When you delete your account, the following data is permanently removed:</p>
+        <ol>
+            <li><strong>Local data</strong> &mdash; All chat messages, journal entries, mood check-ins, task history, tracking data, and assessment results stored on your device (SQLite database)</li>
+            <li><strong>Cloud profile</strong> &mdash; Your profile document in Firebase Firestore (name, age, gender, focus areas, personality assessment)</li>
+            <li><strong>Authentication record</strong> &mdash; Your Firebase Authentication account and associated email address</li>
+            <li><strong>App preferences</strong> &mdash; Onboarding state, session timestamps, coach selection, and cached profile data</li>
+        </ol>
+
+        <div class="warning-box">
+            <strong>This action is irreversible.</strong> Once you delete your account, your data cannot be recovered. We recommend exporting your data first using the <a href="export-data.html">Export Data</a> feature.
+        </div>
+
+        <h2>Steps to Delete Your Account</h2>
+
+        <ol>
+            <li><span class="step-number">1</span> Open <strong>Life Coach AI</strong> on your device</li>
+            <li><span class="step-number">2</span> Go to the <strong>Profile</strong> tab (last tab in the bottom navigation)</li>
+            <li><span class="step-number">3</span> Scroll down to the <strong>Data Management</strong> section</li>
+            <li><span class="step-number">4</span> Tap <strong>"Delete All Data"</strong> (red button)</li>
+            <li><span class="step-number">5</span> A confirmation dialog will appear &mdash; tap <strong>"Delete"</strong> to confirm</li>
+            <li><span class="step-number">6</span> The app will clear all local data, delete your Firestore profile, sign you out of Firebase, and redirect you to the landing screen</li>
+        </ol>
+
+        <div class="info-box">
+            <strong>Subscriptions:</strong> Deleting your account does not automatically cancel your subscription. If you have an active premium subscription, please cancel it separately through your device's app store settings before deleting your account.
+            <br><br>
+            <strong>Apple:</strong> Settings &rarr; Apple ID &rarr; Subscriptions<br>
+            <strong>Android:</strong> Google Play Store &rarr; Payments &amp; subscriptions &rarr; Subscriptions
+        </div>
+
+        <h2>Alternative: Delete Data Only</h2>
+        <p>The "Delete All Data" button removes both your data and your account. If you only want to remove your local data while keeping your account, this is not currently supported as a separate action. Deleting the app from your device will remove all locally stored data but will keep your Firebase account active.</p>
+
+        <h2>Need Help?</h2>
+        <p>If you are unable to delete your account through the app (for example, if you cannot log in), please contact us and we will process your request manually:</p>
+        <p><strong>Email:</strong> <a href="mailto:mustafa.dncc26@gmail.com">mustafa.dncc26@gmail.com</a></p>
+        <p>Please include the email address associated with your account so we can locate and delete your data.</p>
+
+        <footer>
+            &copy; 2026 Spry. All rights reserved.<br>
+            <a href="index.html">&larr; Back to Legal</a>
+        </footer>
+    </div>
+</body>
+</html>

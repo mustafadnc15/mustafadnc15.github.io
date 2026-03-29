@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Export Your Data — Life Coach AI</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #F9F5FF;
+            color: #4A3D6B;
+            line-height: 1.7;
+            padding: 24px 16px 64px;
+        }
+        .container { max-width: 720px; margin: 0 auto; }
+        h1 { font-size: 28px; color: #8B7BAF; margin-bottom: 4px; }
+        .subtitle { font-size: 14px; color: #8B7BAF; margin-bottom: 32px; }
+        h2 {
+            font-size: 20px; color: #8B7BAF;
+            margin-top: 32px; margin-bottom: 12px;
+            padding-bottom: 6px; border-bottom: 2px solid #e4ddf2;
+        }
+        h3 { font-size: 16px; color: #5c4f80; margin-top: 16px; margin-bottom: 8px; }
+        p { margin-bottom: 12px; font-size: 15px; }
+        ul, ol { margin: 8px 0 16px 24px; font-size: 15px; }
+        li { margin-bottom: 8px; }
+        strong { color: #4A3D6B; }
+        a { color: #8B7BAF; text-decoration: underline; }
+        code {
+            background: #F0EAFF;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #5c4f80;
+        }
+        .info-box {
+            background-color: #F0EAFF;
+            border-left: 4px solid #8B7BAF;
+            padding: 16px 20px;
+            border-radius: 6px;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        .step-number {
+            display: inline-block;
+            width: 28px; height: 28px;
+            background: #8B7BAF;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+        .data-table th {
+            background: #F0EAFF;
+            color: #5c4f80;
+            text-align: left;
+            padding: 10px 14px;
+            font-weight: 600;
+        }
+        .data-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid #e4ddf2;
+        }
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: #9a8fbf;
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 2px solid #E8E0F0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Export Your Data</h1>
+        <p class="subtitle">Life Coach AI by Spry</p>
+
+        <h2>Steps to Export</h2>
+
+        <ol>
+            <li><span class="step-number">1</span> Open <strong>Life Coach AI</strong> on your device</li>
+            <li><span class="step-number">2</span> Go to the <strong>Profile</strong> tab (last tab in the bottom navigation)</li>
+            <li><span class="step-number">3</span> Scroll down to the <strong>Data Management</strong> section</li>
+            <li><span class="step-number">4</span> Tap <strong>"Export Data"</strong> (blue button)</li>
+            <li><span class="step-number">5</span> The app will generate a JSON file and open the device share sheet</li>
+            <li><span class="step-number">6</span> Choose where to save or send the file &mdash; you can save it to Files, email it to yourself, upload to cloud storage, etc.</li>
+        </ol>
+
+        <div class="info-box">
+            <strong>File format:</strong> Your data is exported as a single JSON file (<code>life-coach-export.json</code>) that can be opened with any text editor or JSON viewer.
+        </div>
+
+        <h2>What Is Included</h2>
+        <p>The exported file contains all of your locally stored data, organized by category:</p>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>What It Contains</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Sessions</strong></td>
+                    <td>Coaching session records including start/end times and summaries</td>
+                </tr>
+                <tr>
+                    <td><strong>Messages</strong></td>
+                    <td>All chat messages between you and the AI coach, organized by session</td>
+                </tr>
+                <tr>
+                    <td><strong>Tasks</strong></td>
+                    <td>CBT tasks assigned by the coach, including type, status, and completion dates</td>
+                </tr>
+                <tr>
+                    <td><strong>Journal Entries</strong></td>
+                    <td>Your written journal reflections linked to specific tasks</td>
+                </tr>
+                <tr>
+                    <td><strong>Tracking Entries</strong></td>
+                    <td>Numerical tracking data (e.g., mood scores, habit counts) linked to tasks</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>What Is Not Included</h2>
+        <p>The following data is not part of the export:</p>
+        <ul>
+            <li><strong>Account credentials</strong> &mdash; Your email and password are managed by Firebase and are not stored locally</li>
+            <li><strong>Profile data</strong> &mdash; Name, age, gender, focus areas, and personality scores are stored in Firebase Firestore (contact us if you need a copy)</li>
+            <li><strong>Subscription status</strong> &mdash; Managed by your app store and RevenueCat</li>
+            <li><strong>Daily mood check-ins</strong> &mdash; Stored locally but not included in the current export (contact us if needed)</li>
+            <li><strong>PHQ-9 assessment results</strong> &mdash; Stored locally but not included in the current export (contact us if needed)</li>
+        </ul>
+
+        <h2>Need Help?</h2>
+        <p>If you have trouble exporting your data or need data that is not included in the export file, please contact us:</p>
+        <p><strong>Email:</strong> <a href="mailto:mustafa.dncc26@gmail.com">mustafa.dncc26@gmail.com</a></p>
+
+        <footer>
+            &copy; 2026 Spry. All rights reserved.<br>
+            <a href="index.html">&larr; Back to Legal</a>
+        </footer>
+    </div>
+</body>
+</html>
